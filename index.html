@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/responsive.css">
+	<link rel="stylesheet" href="./font/themify-icons-font/themify-icons/themify-icons.css">
+	<link rel="icon" href="img/noel.png" type="image/gif" sizes="16x16">
+	<title>Christmas</title>
+</head>
+<body>
+	<div class="container">
+		<p class="heart">❤</p>
+		<p class="heart">❤❤❤</p>
+		<p class="tree">/_\</p>
+		<p class="tree">/_<span class="white-red">❤</span>_\</p>
+		<p class="tree">/_/_/_\</p>
+		<p class="tree">/_\<span class="purple-green"> ❤ </span>\_\</p>
+		<p class="tree">/_<span class="white-red">❤</span>_/_<span class="purple-green">❤</span>_\</p>
+		<p class="tree">/_\_<span class="purple-green"> ❤ </span>_\_\</p>
+		<p class="tree">/_ /<span class="purple-green">❤ </span>/_/<span class="white-red"> ❤ </span>/_\</p>
+		<p class="tree">/_\_\_<span class="purple-green"> ❤ </span>_\_\</p>
+		<p class="tree">/_<span class="purple-green"> ❤ </span>_/_/_/_/_\</p>
+		<p class="tree">/_\<span class="white-red"> ❤</span>\_\_<span class="purple-green"> ❤ </span>_<span class="purple-green">❤</span>_\</p>
+		<p class="tree">/_ /_/_/_/_/_/_ \</p>
+		<p class="tree">/_\_\_\<span class="white-red"> ❤ </span>\_\_\_\</p>
+		<p class="tree">/_/<span class="white-red"> ❤ </span>/_/_/_/_/<span class="white-red"> ❤ </span>/_\</p>
+		<p class="tree">/_\_<span class="purple-green">❤</span>_\_\_<span class="purple-green">❤</span>_\_\_\</p>
+		<p class="tree">/_/_/_/_<span class="purple-green">❤</span>_/_/_<span class="purple-green">❤</span>_/_\</p>
+		<p class="tree">[___]</p>
+		<button class="click js-click">Click zô đây pà!</button>
+	</div>
+	
+	<div class="modal js-modal">
+		<div class="modal-container js-modal-container">
+			<h1 class="wishes">Merry Christmas Knhin =)))))</h1>
+			<img src="img/knhin.jpg" alt="" class="avt">
+			<button class="close js-close">:3</button>
+		</div>
+	</div>
+
+	<script>
+		const Modal = document.querySelector('.js-modal')
+		const Openmodal = document.querySelector('.js-click')
+		const Closemodal = document.querySelector('.js-close')
+		const Container = document.querySelector('.js-modal-container')
+
+		function show(){
+			Modal.classList.add('open')
+		}
+
+		function hidden(){
+			Modal.classList.remove('open')
+		}
+
+		Openmodal.addEventListener('click', show)
+		Closemodal.addEventListener('click', hidden)
+		Modal.addEventListener('click', hidden)
+		Container.addEventListener('click', function(event){
+			event.stopPropagation()
+		})
+	</script>
+</body>
+</html>

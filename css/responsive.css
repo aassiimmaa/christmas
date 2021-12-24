@@ -1,0 +1,35 @@
+@media(max-width: 390px) {
+	.container{
+		margin-top: 3px;
+	}
+
+	button{
+		margin-top: 10px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.avt{
+		max-width: 100%;
+	}
+
+	.modal-container{
+		min-width: auto;
+		min-height: auto;
+	}
+
+}
+
+@media (min-width: 391px) and (max-width: 800px) {
+	.container{
+		margin-top: 136px;
+	}
+
+	button{
+		margin-top: 70px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

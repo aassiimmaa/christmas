@@ -1,0 +1,142 @@
+@import "reset.css";
+html{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container{
+	max-width: 800px;
+	margin: auto;
+	margin-top: 28px;
+	color: white;
+}
+
+.container > .heart{
+	font-size: 18px;
+}
+
+span{
+	font-size: 14px;
+}
+
+button{
+	margin-left: 332px;
+    margin-top: 50px;
+    padding: 15px;
+    cursor: pointer;
+    background: pink;
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover{
+	opacity: 0.8;
+}
+
+p{
+	font-size: 30px;
+	text-align: center;
+}
+
+
+.heart{
+	animation: heart1 1.5s ease infinite;
+}
+
+.white-red{
+	animation: heart2 1s ease infinite;
+}
+
+.purple-green{
+	animation: heart3 1.5s ease infinite;
+}
+
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.6);
+	display: none;
+}
+
+.modal.open{
+	display: flex;
+}
+
+.avt{
+	max-width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal-container{
+	min-height: 345px;
+	min-width: 478px;
+	background: #fff;
+	background-image: linear-gradient(#e66465, #9198e5);
+	padding: 32px 40px;
+	max-width: calc(100% - 64px);
+	border-radius: 20px; 
+	animation: FaceIn 1s;
+}
+
+.wishes{
+	text-align: center;
+}
+
+.close{
+	color: red;
+	background-color: pink;
+	cursor: pointer;
+	font-size: 24px;
+	border: none;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	float: right;
+	margin-top: 12px;
+	padding: 5px 36px;
+	border-radius: 10px;
+	opacity: 0.7;
+}
+
+.close:hover{
+	opacity: 1;
+}
+
+@keyframes heart1{
+	50%{
+		color: yellow;
+	}
+}
+
+@keyframes heart2{
+	50%{
+		color: red;
+	}
+}
+
+@keyframes heart3{
+	35%{
+		color: #FF99FF;
+	}
+	70%{
+		color: green;
+	}
+}
+
+@keyframes FaceIn{
+	from{
+		opacity: 0;
+	
+	}
+
+
+	to{
+		opacity: 1;
+		
+	}
+
+}
