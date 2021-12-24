@@ -75,7 +75,7 @@ p{
 
 .modal-container{
 	min-height: 345px;
-	min-width: 478px;
+	width: 587px;
 	background: #fff;
 	background-image: linear-gradient(#e66465, #9198e5);
 	padding: 32px 40px;
